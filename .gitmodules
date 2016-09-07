@@ -1,3 +1,3 @@
 [submodule "BalanceSpan"]
 	path = BalanceSpan
-	url = git@github.com:guillaume-bosc/BalanceSpan.git
+	url = https://github.com/guillaume-bosc/BalanceSpan.git
