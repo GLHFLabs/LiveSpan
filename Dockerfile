@@ -11,4 +11,5 @@ RUN pip3 install -r requirements.txt
 COPY api.py .
 COPY BalanceSpan/algo/BalanceSpan .
 COPY BalanceSpan/tests/example/binit .
+COPY BalanceSpan/tests/example/sc2replay_converter.py .
 ENTRYPOINT ["flask", "api.py"]
