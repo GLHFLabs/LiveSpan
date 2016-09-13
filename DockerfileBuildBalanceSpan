@@ -1,0 +1,5 @@
+FROM m0elnx/alpine-x86:latest
+MAINTAINER Emmanuel Hadoux <emmanuel.hadoux@gmail.com>
+RUN apk add --no-cache alpine-sdk
+WORKDIR /usr/local/app/BalanceSpan/
+CMD cd tests/example && g++ -O3 -o binit *.cpp && cd ../../algo/BalanceSpan_Linux && g++ -Wno-write-strings -Wno-deprecated -O3 -o ../BalanceSpan *.cpp SeqTree/*.cpp 
